@@ -24,7 +24,7 @@ export default {
   data() {
     return {
       url:
-        "http://newsapi.org/v2/everything?q=2020&sortBy=popularity&apiKey=" +
+        "https://newsapi.org/v2/everything?q=2020&sortBy=popularity&apiKey=" +
         this.apiKey,
       news_url: "",
       news_title: "",
