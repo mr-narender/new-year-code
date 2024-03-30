@@ -5,15 +5,16 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "npm_upgrade":"./node_modules/npm-check-updates/build/src/bin/cli.js -u && npm install"
-    
+    "npm_upgrade": "./node_modules/npm-check-updates/build/src/bin/cli.js -u && npm install"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
     "bootstrap-vue": "^2.23.1",
     "dotenv": "^16.4.5",
+    "express": "^4.19.2",
     "jquery": "^3.7.1",
+    "postcss": "^8.4.31",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
