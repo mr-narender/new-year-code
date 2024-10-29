@@ -16,7 +16,8 @@
     "jquery": "^3.7.1",
     "postcss": "^8.4.31",
     "vue": "^3.4.21",
-    "vue-router": "^4.3.0"
+    "vue-router": "^4.3.0",
+    "ws": "^8.18.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~5.0.8",
