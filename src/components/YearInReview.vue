@@ -33,30 +33,38 @@ export default {
     };
   },
   methods: {
-    sleep: async function(ms) {
+    sleep: async function (ms) {
       return new Promise((resolve) => setTimeout(resolve, ms));
     },
-    getNews: async function() {
-      fetch(this.url)
-        .then((response) => response.json())
-        .then((newsData) => newsData.articles)
-        .then(async (articles) => {
+    getNews: async function () {
+      try {
+        const response = await fetch(this.url);
+        const newsData = await response.json();
+
+        // Check if articles exist and is an array
+        const articles = newsData.articles;
+        if (Array.isArray(articles)) {
           for (let index = 0; index < articles.length; index++) {
-            let article = articles[index];
+            const article = articles[index];
             this.news_title = article.title;
             this.news_url = article.url;
             this.news_urlToImage = article.urlToImage;
             this.news_description = article.description;
             await this.sleep(3500);
           }
-        });
+        } else {
+          console.error("No articles found in the response.");
+        }
+      } catch (error) {
+        console.error("Error fetching news data:", error);
+      }
     },
-    openThisNews: function() {
+    openThisNews: function () {
       console.log("clicked");
       window.open(this.news_url, "_blank");
     },
   },
-  mounted: function() {
+  mounted: function () {
     this.getNews();
     setInterval(() => {
       this.getNews();
