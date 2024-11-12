@@ -1,19 +1,29 @@
 # new-year-code
 
-## Project setup
+## Install bun
+
 ```
-yarn install
+curl -fsSL https://bun.sh/install | bash
+```
+
+## Project setup
+
+```
+bun install
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
-yarn serve
+bun run serve
 ```
 
 ### Compiles and minifies for production
+
 ```
-yarn build
+bun run build
 ```
 
 ### Customize configuration
+
 See [Configuration Reference](https://cli.vuejs.org/config/).
