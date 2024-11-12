@@ -8,22 +8,22 @@
     "npm_upgrade": "./node_modules/npm-check-updates/build/src/bin/cli.js -u && npm install"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.3",
-    "bootstrap-vue": "^2.23.1",
-    "dotenv": "^16.4.5",
-    "express": "^4.21.1",
-    "jquery": "^3.7.1",
-    "postcss": "^8.4.31",
-    "vue": "^3.4.21",
-    "vue-router": "^4.3.0",
-    "ws": "^8.18.0"
+    "@popperjs/core": "2.11.8",
+    "bootstrap": "5.3.3",
+    "bootstrap-vue": "2.23.1",
+    "dotenv": "16.4.5",
+    "express": "4.21.1",
+    "jquery": "3.7.1",
+    "postcss": "8.4.49",
+    "vue": "3.5.12",
+    "vue-router": "4.4.5",
+    "ws": "8.18.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~5.0.8",
-    "@vue/cli-plugin-router": "~5.0.8",
-    "@vue/cli-service": "~5.0.8",
-    "@vue/compiler-sfc": "^3.4.21",
-    "npm-check-updates": "^16.14.17"
+    "@vue/cli-plugin-babel": "5.0.8",
+    "@vue/cli-plugin-router": "5.0.8",
+    "@vue/cli-service": "5.0.8",
+    "@vue/compiler-sfc": "3.5.12",
+    "npm-check-updates": "17.1.11"
   }
 }
